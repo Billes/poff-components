@@ -19,7 +19,7 @@ const Toggle: FC<ToggleProps> = ({
         onClick={onClick}
         disabled={disabled}
         className={classNames(
-          enabled ? 'bg-sky-600' : 'bg-slate-200',
+          enabled ? 'bg-sky-600' : 'bg-gray-200',
           disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer',
           'relative inline-flex h-6 w-11 flex-shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2',
         )}
@@ -27,7 +27,7 @@ const Toggle: FC<ToggleProps> = ({
         <span className='sr-only'>Use setting</span>
         <span
           className={classNames(
-            enabled ? 'translate-x-5' : 'translate-x-0',
+            enabled ? 'trangray-x-5' : 'trangray-x-0',
             'pointer-events-none relative inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out',
           )}
         >
@@ -38,7 +38,7 @@ const Toggle: FC<ToggleProps> = ({
             )}
             aria-hidden='true'
           >
-            <svg className='h-3 w-3 text-slate-400' fill='none' viewBox='0 0 12 12'>
+            <svg className='h-3 w-3 text-gray-400' fill='none' viewBox='0 0 12 12'>
               <path
                 d='M4 8l2-2m0 0l2-2M6 6L4 4m2 2l2 2'
                 stroke='currentColor'
@@ -62,7 +62,7 @@ const Toggle: FC<ToggleProps> = ({
         </span>
       </Switch>
       <span className='ml-4 flex flex-grow flex-col'>
-        <Switch.Label as='span' className='font-roboto text-sm font-medium text-slate-900' passive>
+        <Switch.Label as='span' className='font-roboto text-sm font-medium text-gray-900' passive>
           {label}
         </Switch.Label>
         <Switch.Description as='span' className='font-roboto text-xs text-gray-500'>
