@@ -7,11 +7,6 @@ export default {
   component: Toggle,
   argTypes: {
     onClick: { action: 'clicked' },
-    enabled: {
-      control: {
-        type: 'boolean',
-      },
-    },
     disabled: {
       control: {
         type: 'boolean',
