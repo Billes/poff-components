@@ -12,7 +12,7 @@ const Toggle: FC<ToggleProps> = ({
   onClick,
 }) => {
   return (
-    <Switch.Group as='div' className='flex items-center justify-between'>
+    <Switch.Group as='div' className='flex items-center justify-between font-roboto'>
       <Switch
         checked={enabled}
         onChange={onChange}
@@ -20,7 +20,7 @@ const Toggle: FC<ToggleProps> = ({
         disabled={disabled}
         className={classNames(
           enabled ? 'bg-sky-600' : 'bg-slate-200',
-          disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer',
+          disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer',
           'relative inline-flex h-6 w-11 flex-shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2',
         )}
       >
@@ -33,7 +33,7 @@ const Toggle: FC<ToggleProps> = ({
         >
           <span
             className={classNames(
-              enabled ? 'opacity-0 ease-out duration-100' : 'opacity-100 ease-in duration-200',
+              enabled ? 'opacity-0 duration-100 ease-out' : 'opacity-100 duration-200 ease-in',
               'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity',
             )}
             aria-hidden='true'
@@ -50,7 +50,7 @@ const Toggle: FC<ToggleProps> = ({
           </span>
           <span
             className={classNames(
-              enabled ? 'opacity-100 ease-in duration-200' : 'opacity-0 ease-out duration-100',
+              enabled ? 'opacity-100 duration-200 ease-in' : 'opacity-0 duration-100 ease-out',
               'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity',
             )}
             aria-hidden='true'
@@ -61,7 +61,7 @@ const Toggle: FC<ToggleProps> = ({
           </span>
         </span>
       </Switch>
-      <span className='flex flex-grow flex-col ml-4'>
+      <span className='ml-4 flex flex-grow flex-col'>
         <Switch.Label as='span' className='font-roboto text-sm font-medium text-slate-900' passive>
           {label}
         </Switch.Label>

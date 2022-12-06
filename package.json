@@ -111,6 +111,7 @@
     "eslint-plugin-storybook": "^0.6.8",
     "postcss": "^8.4.19",
     "prettier": "^2.8.0",
+    "prettier-plugin-tailwindcss": "^0.2.0",
     "prop-types": "^15.8.1",
     "rollup": "^3.6.0",
     "rollup-plugin-dts": "^5.0.0",
