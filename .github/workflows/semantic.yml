@@ -17,7 +17,6 @@ jobs:
       - uses: codfish/semantic-release-action@v2
         id: semantic
         with:
-          dry_run: true
           # specify default branches to add support for the `main` branch
           # which semantic-release doesn't have as a default yet.
           branches: |
