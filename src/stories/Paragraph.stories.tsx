@@ -26,6 +26,7 @@ export const MultipleParagraphs = Template.bind({})
 MultipleParagraphs.args = {
   children: (
     <>
+      <h1 className='text-2xl font-bold uppercase text-gray-500'>Headline</h1>
       <p>
         Consequat aliquip tempor proident culpa adipisicing laboris enim adipisicing. Elit enim
         proident eu duis irure consequat mollit eu consectetur labore. Id nulla voluptate velit
