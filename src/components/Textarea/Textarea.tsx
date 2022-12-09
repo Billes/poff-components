@@ -1,36 +1,34 @@
-import { useState } from '@storybook/addons' //Or should it import form react like before?
 import React from 'react'
 import { TextareaProps } from './Textarea.types'
+import classNames from '../../utils/joinClassNames'
 
-const Textarea: React.FC<TextareaProps> = ({ placeholder, value }) => {
-  const [text, setText] = useState('')
-
-  const handleChange = (e: React.ChangeEvent<HTMLAreaElement>) => {
-    setText(e.target.value)
-  }
+const Textarea: React.FC<TextareaProps> = ({
+  disabled = false,
+  placeholder,
+  error,
+  onChange,
+  ...props
+}) => {
   return (
     <div>
-      <Textarea className='font-roboto text-2xl font-black leading-6 text-black'>
-        placeholder='text exempel' onChange={handleChange}
-      </Textarea>
+      <textarea
+        className={classNames(
+          'w-full rounded-md py-1 px-2 shadow-sm',
+          'border border-gray-300',
+          'font-roboto text-sm font-light text-gray-700',
+          'focus:outline-none',
+          'disabled:cursor-not-allowed disabled:opacity-75',
+          error ? 'border-red-700 text-red-700' : 'focus:border-sky-600',
+        )}
+        rows={5}
+        wrap='hard'
+        placeholder={placeholder}
+        onChange={onChange}
+        {...props}
+      ></textarea>
+      {error && <span className='ml-2 text-xs text-red-500'>{error}</span>}
     </div>
   )
 }
 
-//   return React.createElement('textarea', {
-//     placeholder,
-//     value: text,
-//     onChange: handleChange,
-//   })
-// }
-// <Textarea placeholder='text exempel' onChange={handleChange} />
-
 export default Textarea
-
-// const Textarea = () => {
-//   return <div>textarea</div>
-// }
-
-// const Textarea: React.FC<TextareaProps> = ({ placeholder }) => {
-//   return React.createElement('textarea', { placeholder }) //was textarea with small t first
-// }

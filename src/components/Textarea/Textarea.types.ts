@@ -1,7 +1,8 @@
 import { ChangeEventHandler } from 'react'
 
 export interface TextareaProps {
+  disabled?: boolean
+  error?: string
   placeholder?: string
-  value?: Text
-  onChange?: ChangeEventHandler<HTMLAreaElement>
+  onChange?: ChangeEventHandler<HTMLTextAreaElement>
 }
