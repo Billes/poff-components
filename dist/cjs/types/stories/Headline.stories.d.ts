@@ -1,5 +1,5 @@
-import { Meta, Story } from '@storybook/react';
-import { HeadlineProps } from '../components/Headline/Headline.types';
-declare const meta: Meta;
-export default meta;
-export declare const Default: Story<HeadlineProps>;
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+declare const _default: ComponentMeta<React.FC<import("../components/Headline/Headline.types").HeadlineProps>>;
+export default _default;
+export declare const Default: ComponentStory<React.FC<import("../components/Headline/Headline.types").HeadlineProps>>;
