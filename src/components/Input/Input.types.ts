@@ -1,4 +1,4 @@
-import { ChangeEventHandler } from 'react'
+import { ChangeEventHandler, ReactNode } from 'react'
 
 export enum InputType {
   TEXT = 'text',
@@ -10,6 +10,7 @@ export enum InputType {
   URL = 'url',
   DATE = 'date',
   TIME = 'time',
+  SEARCH = 'search',
 }
 
 export interface InputProps {
@@ -18,4 +19,5 @@ export interface InputProps {
   placeholder?: string
   error?: string
   onChange?: ChangeEventHandler<HTMLInputElement>
+  icon?: ReactNode
 }
