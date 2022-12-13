@@ -11,3 +11,9 @@ const Template: ComponentStory<typeof Textarea> = (args) => <Textarea {...args} 
 
 export const Default = Template.bind({})
 Default.args = { placeholder: 'testar med text' }
+
+export const Disable = Template.bind({})
+Disable.args = { disabled: true, placeholder: 'testar med text' }
+
+export const Rows = Template.bind({})
+Rows.args = { rows: 10, placeholder: 'testar med text' }

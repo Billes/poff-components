@@ -5,6 +5,7 @@ import classNames from '../../utils/joinClassNames'
 const Textarea: React.FC<TextareaProps> = ({
   disabled = false,
   placeholder,
+  rows = 5,
   error,
   onChange,
   ...props
@@ -20,8 +21,9 @@ const Textarea: React.FC<TextareaProps> = ({
           'disabled:cursor-not-allowed disabled:opacity-75',
           error ? 'border-red-700 text-red-700' : 'focus:border-sky-600',
         )}
-        rows={5}
+        rows={rows}
         wrap='hard'
+        disabled={disabled}
         placeholder={placeholder}
         onChange={onChange}
         {...props}
