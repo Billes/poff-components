@@ -7,6 +7,7 @@ const Textarea: React.FC<TextareaProps> = ({
   placeholder,
   rows = 5,
   error,
+  name,
   onChange,
   ...props
 }) => {
@@ -26,6 +27,7 @@ const Textarea: React.FC<TextareaProps> = ({
         rows={rows}
         wrap='hard'
         disabled={disabled}
+        name={name}
         placeholder={placeholder}
         onChange={onChange}
         {...props}
