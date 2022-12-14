@@ -1,8 +1,22 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import { DroplistProps } from './Droplist.types'
 import classNames from '../../utils/joinClassNames'
 
-const Droplist: FC<DroplistProps> = ({ dropListName, Items, error, onChange }) => {
+const Droplist: FC<DroplistProps> = ({
+  dropListName,
+  Items,
+  error,
+  placeHolder,
+  groupOption,
+  onChange,
+}) => {
+  const [selectedOption, setSelectedOption] = useState<string>()
+
+  const selectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const answer = event.target.value
+    setSelectedOption(answer)
+  }
+
   return (
     <div>
       <label>
@@ -10,7 +24,8 @@ const Droplist: FC<DroplistProps> = ({ dropListName, Items, error, onChange }) =
         <select
           name={dropListName}
           id={dropListName}
-          placeholder='Please select your role'
+          placeholder={placeHolder}
+          onChange={selectChange}
           className={classNames(
             'w-full rounded-md py-1 px-2 shadow-sm',
             'border border-gray-300',
@@ -20,11 +35,18 @@ const Droplist: FC<DroplistProps> = ({ dropListName, Items, error, onChange }) =
             error ? 'border-red-700 text-red-700' : 'focus:border-sky-600',
           )}
         >
-          {Items?.forEach(function (item) {
-            ;<option key={item.itemKey} value={item.name}></option>
-          })}
-          ;
+          <option value='' selected>
+            --{placeHolder}--
+          </option>
+          <optgroup label={groupOption}></optgroup>
+          {Items?.map((item: Items) => (
+            <option key={item.itemKey} value={item.itemKey}>
+              {item.name}
+            </option>
+          ))}
         </select>
+        {error && <span className='ml-2 text-xs text-red-500'>{error}</span>}
+        {<span> You select : {selectedOption}</span>} //The operation environment don't need this line, This is show the user selected with option.The operation environment doesn't need this line, This shows the user selected which option.
       </label>
     </div>
   )

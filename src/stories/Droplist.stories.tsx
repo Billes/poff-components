@@ -4,13 +4,9 @@ import Droplist from '../components/Droplist/Index'
 export default {
   title: 'Form/Droplist',
   component: Droplist,
-  dropListName: 'Droplist',
-  Items: [
-    [1, 'tes1'],
-    [2, 'test2'],
-    [3, 'test3']
-  ],
-  error: 'Something went wrong!!!',
+  dropListName: '',
+  Items: [],
+  error: '',
   argTypes: {
     onChange: { action: 'Response' },
   },
@@ -19,7 +15,16 @@ export default {
 const Template: ComponentStory<typeof Droplist> = (args) => <Droplist {...args} />
 
 export const Default = Template.bind({})
-Default.args = {}
+Default.args = {
+  Items: [
+    { itemKey: 1, name: 'One' },
+    { itemKey: 2, name: 'Two' },
+    { itemKey: 3, name: 'Three' },
+    { itemKey: 4, name: 'four' },
+    { itemKey: 5, name: 'five' },
+    { itemKey: 6, name: 'six' },
+  ],
+}
 
 export const Error = Template.bind({})
 Error.args = {

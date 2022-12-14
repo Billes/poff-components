@@ -9,5 +9,7 @@ export interface DroplistProps {
   dropListName: string
   Items: Item[]
   error?: string
+  placeHolder?: string
+  groupOption?: string
   onChange?: ChangeEventHandler<HTMLInputElement>
 }
