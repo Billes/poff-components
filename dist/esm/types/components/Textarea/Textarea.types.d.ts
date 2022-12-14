@@ -4,5 +4,6 @@ export interface TextareaProps {
     error?: string;
     placeholder?: string;
     rows?: number;
+    name: string;
     onChange?: ChangeEventHandler<HTMLTextAreaElement>;
 }

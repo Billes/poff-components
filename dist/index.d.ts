@@ -23,6 +23,7 @@ interface InputProps {
     disabled?: boolean;
     placeholder?: string;
     error?: string;
+    name: string;
     onChange?: ChangeEventHandler<HTMLInputElement>;
     icon?: ReactNode;
 }
@@ -51,6 +52,7 @@ interface TextareaProps {
     error?: string;
     placeholder?: string;
     rows?: number;
+    name: string;
     onChange?: ChangeEventHandler<HTMLTextAreaElement>;
 }
 
