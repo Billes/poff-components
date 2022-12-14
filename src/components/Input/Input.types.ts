@@ -18,6 +18,7 @@ export interface InputProps {
   disabled?: boolean
   placeholder?: string
   error?: string
+  name: string
   onChange?: ChangeEventHandler<HTMLInputElement>
   icon?: ReactNode
 }
