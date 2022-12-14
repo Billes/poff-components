@@ -41,25 +41,22 @@ The implementation of Storybook is done by adding a story to `/src/stories/`. Th
 To run storybook use `npm run storybook`
 
 ## Commit information
+
 We are using GitHub workflows to automate storybook building and publishing of new releases.
-Therefore, it is important that we use the correct types of commits in order for the version management to be correct:
+As you commit changes to your project, write them down into the [Unreleased] section in CHANGELOG.md. Once a new release is created, unreleased changes are automatically moved under the new version heading.
+Our workflow requires that you stick with the [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) convention.
 
-Commit message should contain one of the following strings:
-- **feat**: A new feature
-- **fix**: A bug fix
-- **docs**: Documentation only changes
-- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-- **refactor**: A code change that neither fixes a bug nor adds a feature
-- **perf**: A code change that improves performance
-- **test**: Adding missing or correcting existing tests
-- **chore**: Changes to the build process or auxiliary tools and libraries such as documentation generation
+##### Type of changes:
 
-e.g. `git commit -m "docs: Updated documentation for commits"`
-or
-`git commit -m "feat: Input component"`
+- **Added**: for new features
+- **Changed**: for changes in existing functionality
+- **Deprecated**: for soon-to-be removed features
+- **Removed**: for now removed features
+- **Fixed**: for any bug fixes
+- **Security**: in case of vulnerabilities.
 
 ## Production
 
-When a component is finished and merged with main, an action is run that builds the Storybook and publishes it on the github page.
+When a component is finished and merged with main, an action is run that builds the Storybook page.
 
 TODO: Skapa en action som kompilerar och publicerar komponenterna med hjälp av rollup (e.g. `npm run rollup -c`)
