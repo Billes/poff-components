@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Fixed
 - Add peerDependencies for @tailwindcss/forms
+- Add name to Input-component
 
 ## 1.1.7 - 2022-12-14
 ### Fixed
