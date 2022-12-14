@@ -25,7 +25,9 @@ const Input: FC<InputProps> = ({
         'focus:outline-none',
         'disabled:cursor-not-allowed disabled:opacity-75',
         icon ? 'pl-9' : '',
-        error ? 'border-red-700 text-red-700' : 'focus:border-sky-600',
+        error
+          ? 'border-red-700 text-red-700 focus:ring-1 focus:ring-red-700'
+          : 'focus:border-sky-600 focus:ring-1 focus:ring-sky-600',
       )}
       type={type}
       disabled={disabled}
