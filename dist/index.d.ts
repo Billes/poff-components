@@ -1,4 +1,4 @@
-import { FC, ChangeEventHandler, ReactNode } from 'react';
+import React, { FC, ChangeEventHandler, ReactNode } from 'react';
 
 interface HeadlineProps {
     label: string;
@@ -15,7 +15,8 @@ declare enum InputType {
     TEL = "tel",
     URL = "url",
     DATE = "date",
-    TIME = "time"
+    TIME = "time",
+    SEARCH = "search"
 }
 interface InputProps {
     type?: InputType;
@@ -23,6 +24,7 @@ interface InputProps {
     placeholder?: string;
     error?: string;
     onChange?: ChangeEventHandler<HTMLInputElement>;
+    icon?: ReactNode;
 }
 
 declare const Input: FC<InputProps>;
@@ -44,4 +46,14 @@ interface ToggleProps {
 
 declare const Toggle: FC<ToggleProps>;
 
-export { Headline, Input, Paragraph, Toggle };
+interface TextareaProps {
+    disabled?: boolean;
+    error?: string;
+    placeholder?: string;
+    rows?: number;
+    onChange?: ChangeEventHandler<HTMLTextAreaElement>;
+}
+
+declare const Textarea: React.FC<TextareaProps>;
+
+export { Headline, Input, Paragraph, Textarea, Toggle };
