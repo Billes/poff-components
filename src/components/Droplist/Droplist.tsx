@@ -46,8 +46,7 @@ const Droplist: FC<DroplistProps> = ({
           ))}
         </select>
         {error && <span className='ml-2 text-xs text-red-500'>{error}</span>}
-        {<span> You select : {selectedOption}</span>} //The operation environment don't need this
-        line, This is show the user selected with option.The operation environment doesn't need this
+        {<span> You select : {selectedOption}</span>} //The operation environment doesn't need this
         line, This shows the user selected which option.
       </label>
     </div>

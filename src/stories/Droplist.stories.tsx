@@ -25,8 +25,3 @@ Default.args = {
     { itemKey: 6, name: 'six' },
   ],
 }
-
-export const Error = Template.bind({})
-Error.args = {
-  error: 'Värdet saknas',
-}
