@@ -8,7 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 ## 1.1.3 - 2022-12-14
-Added an icon props on Input-component
 
 ### Added
+
 - Changelog
+- An icon props on Input-component
