@@ -6,9 +6,9 @@ export default {
   component: Droplist,
   dropListName: 'Droplist',
   Items: [
-    [1, 'tes1'],
-    [2, 'test2'],
-    [3, 'test3']
+    { itemKey: 1, name: 'tes1' },
+    { itemKey: 2, name: 'test2' },
+    { itemKey: 3, name: 'test3' },
   ],
   error: 'Something went wrong!!!',
   argTypes: {
@@ -19,7 +19,12 @@ export default {
 const Template: ComponentStory<typeof Droplist> = (args) => <Droplist {...args} />
 
 export const Default = Template.bind({})
-Default.args = {}
+Default.args = {
+  Items: [
+    { itemKey: 1, name: 'test1' },
+    { itemKey: 2, name: 'test2' },
+  ],
+}
 
 export const Error = Template.bind({})
 Error.args = {

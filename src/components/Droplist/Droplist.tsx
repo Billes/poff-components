@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { DroplistProps } from './Droplist.types'
+import { DroplistProps, Item } from './Droplist.types'
 import classNames from '../../utils/joinClassNames'
 
 const Droplist: FC<DroplistProps> = ({ dropListName, Items, error, onChange }) => {
@@ -20,10 +20,11 @@ const Droplist: FC<DroplistProps> = ({ dropListName, Items, error, onChange }) =
             error ? 'border-red-700 text-red-700' : 'focus:border-sky-600',
           )}
         >
-          {Items?.forEach(function (item) {
-            ;<option key={item.itemKey} value={item.name}></option>
-          })}
-          ;
+          {Items?.map((item: Item) => (
+            <option key={item.itemKey} value={item.itemKey}>
+              {item.name}
+            </option>
+          ))}
         </select>
       </label>
     </div>
