@@ -56,4 +56,4 @@ interface TextareaProps {
 
 declare const Textarea: React.FC<TextareaProps>;
 
-export { Headline, Input, Paragraph, Textarea, Toggle };
+export { Headline, Input, InputType, Paragraph, Textarea, Toggle };
