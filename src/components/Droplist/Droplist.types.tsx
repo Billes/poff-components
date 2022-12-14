@@ -1,9 +1,10 @@
 import { ChangeEventHandler } from 'react'
 
 export interface Item {
-  key: number
+  itemKey: number
   name: string
 }
+
 export interface DroplistProps {
   dropListName: string
   Items: Item[]

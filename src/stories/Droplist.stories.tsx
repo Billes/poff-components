@@ -1,13 +1,14 @@
-import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import Droplist from '../components/Droplist/Index'
 
 export default {
+  title: 'Form/Droplist',
+  component: Droplist,
   dropListName: 'Droplist',
   Items: [
     [1, 'tes1'],
     [2, 'test2'],
-    [3, 'test3'],
+    [3, 'test3']
   ],
   error: 'Something went wrong!!!',
   argTypes: {
@@ -19,3 +20,8 @@ const Template: ComponentStory<typeof Droplist> = (args) => <Droplist {...args} 
 
 export const Default = Template.bind({})
 Default.args = {}
+
+export const Error = Template.bind({})
+Error.args = {
+  error: 'Värdet saknas',
+}
