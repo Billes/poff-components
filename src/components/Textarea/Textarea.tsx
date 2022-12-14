@@ -14,12 +14,14 @@ const Textarea: React.FC<TextareaProps> = ({
     <div>
       <textarea
         className={classNames(
-          'w-full rounded-md py-1 px-2 shadow-sm',
+          'block w-full rounded-md py-1 px-2 shadow-sm',
           'border border-gray-300',
           'font-roboto text-sm font-light text-gray-700',
           'focus:outline-none',
           'disabled:cursor-not-allowed disabled:opacity-75',
-          error ? 'border-red-700 text-red-700' : 'focus:border-sky-600',
+          error
+            ? 'border-red-700 text-red-700 focus:ring-1 focus:ring-red-700'
+            : 'focus:border-sky-600 focus:ring-1 focus:ring-sky-600',
         )}
         rows={rows}
         wrap='hard'
