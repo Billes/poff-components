@@ -1,6 +1,8 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import Input from '../components/Input'
+import { InputType } from '../components/Input/Input.types'
 
 export default {
   title: 'Form/Input',
@@ -23,4 +25,17 @@ Placeholder.args = {
 export const Error = Template.bind({})
 Error.args = {
   error: 'Värdet saknas',
+}
+
+export const Password = Template.bind({})
+Password.args = {
+  placeholder: 'Enter a password',
+  type: InputType.PASSWORD,
+}
+
+export const Icon = Template.bind({})
+Icon.args = {
+  placeholder: 'Search...',
+  type: InputType.SEARCH,
+  icon: <MagnifyingGlassIcon className='h-5 w-5 text-slate-400' aria-hidden='true' />,
 }

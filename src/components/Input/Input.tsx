@@ -8,16 +8,23 @@ const Input: FC<InputProps> = ({
   placeholder,
   error,
   onChange,
+  icon,
   ...props
 }) => (
-  <div>
+  <div className='relative rounded-md shadow-sm'>
+    {icon && (
+      <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2'>
+        {icon}
+      </div>
+    )}
     <input
       className={classNames(
-        'w-full rounded-md py-1 px-2 shadow-sm',
+        'block w-full rounded-md py-1 px-2',
         'border border-gray-300',
         'font-roboto text-sm font-light text-gray-700',
         'focus:outline-none',
         'disabled:cursor-not-allowed disabled:opacity-75',
+        icon ? 'pl-9' : '',
         error ? 'border-red-700 text-red-700' : 'focus:border-sky-600',
       )}
       type={type}
