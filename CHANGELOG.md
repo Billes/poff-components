@@ -7,28 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.1.8 - 2022-12-14
 ### Fixed
-
 - Add peerDependencies for @tailwindcss/forms
 - Add name to Input-component
 - Add name to Textarea-component
 
 ## 1.1.7 - 2022-12-14
-
 ### Fixed
-
 - Updated classes on Input-component
 - Updated classes on Textarea-component
 
 ## 1.1.6 - 2022-12-14
-
 ### Fixed
-
 - Export InputType
 
 ## 1.1.3 - 2022-12-14
-
 ### Added
-
 - Changelog
 - An icon props on Input-component
