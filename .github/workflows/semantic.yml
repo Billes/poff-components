@@ -1,9 +1,9 @@
 name: Semantic release
 
 on:
-  push:
-    branches:
-      - main
+  #push:
+  #  branches:
+  #    - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -17,8 +17,7 @@ jobs:
       - uses: codfish/semantic-release-action@v2
         id: semantic
         with:
-          # specify default branches to add support for the `main` branch
-          # which semantic-release doesn't have as a default yet.
+          dry_run: true
           branches: |
             [
               '+([0-9])?(.{+([0-9]),x}).x',
