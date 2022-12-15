@@ -17,7 +17,7 @@ const Alert = ({
   body,
   destroy,
   duration = 0,
-  id,
+  id = 'alert-id',
 }: AlertProps) => {
   useEffect(() => {
     if (!duration) return
