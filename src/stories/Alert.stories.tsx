@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import Alert from '../components/Alert'
 import { AlertType } from '../components/Alert/Alert.types'

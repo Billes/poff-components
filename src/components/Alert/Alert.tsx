@@ -24,7 +24,9 @@ const Alert = ({
 
     const timer = setTimeout(() => {
       if (duration !== 0) {
-        destroy()
+        if (destroy) {
+          destroy()
+        }
       }
     }, duration)
 
