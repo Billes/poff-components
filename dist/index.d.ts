@@ -14,7 +14,7 @@ interface AlertProps {
     icon?: boolean;
     closable?: boolean;
     duration?: number;
-    destroy: () => void;
+    destroy?: () => void;
 }
 
 declare const _default: React.MemoExoticComponent<({ closable, icon, type, headline, body, destroy, duration, id, }: AlertProps) => JSX.Element>;

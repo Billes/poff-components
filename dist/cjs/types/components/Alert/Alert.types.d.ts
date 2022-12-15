@@ -12,5 +12,5 @@ export interface AlertProps {
     icon?: boolean;
     closable?: boolean;
     duration?: number;
-    destroy: () => void;
+    destroy?: () => void;
 }
