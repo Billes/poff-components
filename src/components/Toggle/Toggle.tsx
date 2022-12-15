@@ -27,7 +27,7 @@ const Toggle: FC<ToggleProps> = ({
         <span className='sr-only'>Use setting</span>
         <span
           className={classNames(
-            enabled ? 'trangray-x-5' : 'trangray-x-0',
+            enabled ? 'translate-x-5' : 'translate-x-0',
             'pointer-events-none relative inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out',
           )}
         >
@@ -61,7 +61,7 @@ const Toggle: FC<ToggleProps> = ({
           </span>
         </span>
       </Switch>
-      <span className='ml-4 flex flex-grow flex-col'>
+      <span className='ml-2 flex flex-grow flex-col'>
         <Switch.Label as='span' className='font-roboto text-sm font-medium text-gray-900' passive>
           {label}
         </Switch.Label>
