@@ -6,7 +6,7 @@ export declare enum AlertType {
 }
 export interface AlertProps {
     type?: AlertType;
-    id: string;
+    id?: string;
     headline: string;
     body?: string;
     icon?: boolean;

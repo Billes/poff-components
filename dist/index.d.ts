@@ -8,7 +8,7 @@ declare enum AlertType {
 }
 interface AlertProps {
     type?: AlertType;
-    id: string;
+    id?: string;
     headline: string;
     body?: string;
     icon?: boolean;
