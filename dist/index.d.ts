@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React, { FC, ChangeEventHandler, ReactNode } from 'react';
 
 declare enum AlertType {
@@ -9,15 +8,16 @@ declare enum AlertType {
 }
 interface AlertProps {
     type?: AlertType;
+    id: string;
     headline: string;
     body?: string;
     icon?: boolean;
     closable?: boolean;
-    show?: boolean;
-    onClick: () => void;
+    duration?: number;
+    destroy: () => void;
 }
 
-declare const Alert: ({ show, closable, icon, type, headline, body, onClick, }: AlertProps) => JSX.Element;
+declare const _default: React.MemoExoticComponent<({ closable, icon, type, headline, body, destroy, duration, id, }: AlertProps) => JSX.Element>;
 
 interface HeadlineProps {
     label: string;
@@ -77,4 +77,4 @@ interface TextareaProps {
 
 declare const Textarea: React.FC<TextareaProps>;
 
-export { Alert, AlertType, Headline, Input, InputType, Paragraph, Textarea, Toggle };
+export { _default as Alert, AlertProps, AlertType, Headline, Input, InputType, Paragraph, Textarea, Toggle };

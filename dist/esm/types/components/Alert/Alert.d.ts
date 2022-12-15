@@ -1,4 +1,4 @@
-/// <reference types="react" />
+import React from 'react';
 import { AlertProps } from './Alert.types';
-declare const Alert: ({ show, closable, icon, type, headline, body, onClick, }: AlertProps) => JSX.Element;
-export default Alert;
+declare const _default: React.MemoExoticComponent<({ closable, icon, type, headline, body, destroy, duration, id, }: AlertProps) => JSX.Element>;
+export default _default;

@@ -6,10 +6,11 @@ export declare enum AlertType {
 }
 export interface AlertProps {
     type?: AlertType;
+    id: string;
     headline: string;
     body?: string;
     icon?: boolean;
     closable?: boolean;
-    show?: boolean;
-    onClick: () => void;
+    duration?: number;
+    destroy: () => void;
 }
