@@ -7,7 +7,7 @@ export default {
   title: 'Elements/Alert',
   component: Alert,
   argTypes: {
-    onClick: { action: 'clicked' },
+    destroy: { action: 'auto destroyed' },
     show: {
       control: {
         type: 'boolean',
@@ -27,27 +27,11 @@ export default {
 } as ComponentMeta<typeof Alert>
 
 const Template: ComponentStory<typeof Alert> = (args) => {
-  const [show, setShow] = useState(true)
-
-  const resetElement = () => {
-    setShow(true)
-  }
-
-  const closeElement = () => {
-    setShow(false)
-
-    // reset show state for test
-    setTimeout(function () {
-      resetElement()
-    }, 5000)
-  }
-
-  return <Alert {...args} show={show} onClick={closeElement} />
+  return <Alert {...args} />
 }
 
 export const Success = Template.bind({})
 Success.args = {
-  show: true,
   closable: true,
   type: AlertType.SUCCESS,
   headline: 'Success!',
@@ -57,7 +41,6 @@ Success.args = {
 
 export const Info = Template.bind({})
 Info.args = {
-  show: true,
   closable: true,
   type: AlertType.INFO,
   headline: 'Information',
@@ -66,7 +49,6 @@ Info.args = {
 
 export const Warning = Template.bind({})
 Warning.args = {
-  show: true,
   closable: true,
   type: AlertType.WARNING,
   headline: 'Warning!',
@@ -75,7 +57,6 @@ Warning.args = {
 
 export const Error = Template.bind({})
 Error.args = {
-  show: true,
   closable: true,
   type: AlertType.ERROR,
   headline: 'Error!',
@@ -84,9 +65,17 @@ Error.args = {
 
 export const OnlyHeadline = Template.bind({})
 OnlyHeadline.args = {
-  show: true,
   closable: true,
   icon: true,
   type: AlertType.SUCCESS,
   headline: 'You succeeded!',
+}
+
+export const SelfDestroying = Template.bind({})
+SelfDestroying.args = {
+  closable: true,
+  type: AlertType.SUCCESS,
+  headline: 'Self destroying!',
+  body: 'This alert will self destroy after 3 seconds. (set duration in ms)',
+  duration: 3000,
 }
