@@ -1,4 +1,23 @@
+/// <reference types="react" />
 import React, { FC, ChangeEventHandler, ReactNode } from 'react';
+
+declare enum AlertType {
+    ERROR = "error",
+    INFO = "info",
+    SUCCESS = "success",
+    WARNING = "warning"
+}
+interface AlertProps {
+    type?: AlertType;
+    headline: string;
+    body?: string;
+    icon?: boolean;
+    closable?: boolean;
+    show?: boolean;
+    onClick: () => void;
+}
+
+declare const Alert: ({ show, closable, icon, type, headline, body, onClick, }: AlertProps) => JSX.Element;
 
 interface HeadlineProps {
     label: string;
@@ -58,4 +77,4 @@ interface TextareaProps {
 
 declare const Textarea: React.FC<TextareaProps>;
 
-export { Headline, Input, InputType, Paragraph, Textarea, Toggle };
+export { Alert, AlertType, Headline, Input, InputType, Paragraph, Textarea, Toggle };

@@ -1,3 +1,5 @@
+export { default as Alert } from './Alert';
+export { AlertType } from './Alert/Alert.types';
 export { default as Headline } from './Headline';
 export { default as Input } from './Input';
 export { InputType } from './Input/Input.types';
