@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Alert component
 - Storybook for Alert in 8 different states
 
+### Fixed
+
+- Wrong class names on Toggle
+
 ### Added
 
 - Alert component
