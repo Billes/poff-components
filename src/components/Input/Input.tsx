@@ -3,6 +3,7 @@ import { InputProps, InputType } from './Input.types'
 import classNames from '../../utils/joinClassNames'
 
 const Input: FC<InputProps> = ({
+  id,
   type = InputType.TEXT,
   disabled = false,
   placeholder,
@@ -20,6 +21,7 @@ const Input: FC<InputProps> = ({
     )}
 
     <input
+      id={id}
       className={classNames(
         'block w-full rounded-md',
         'border border-gray-300',

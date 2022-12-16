@@ -14,6 +14,7 @@ export enum InputType {
 }
 
 export interface InputProps {
+  id: string
   type?: InputType
   disabled?: boolean
   placeholder?: string
