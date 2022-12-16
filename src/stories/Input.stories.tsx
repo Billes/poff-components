@@ -15,22 +15,28 @@ export default {
 const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />
 
 export const Default = Template.bind({})
-Default.args = {}
+Default.args = {
+  id: 'standard',
+  name: 'InputStandard',
+}
 
 export const Placeholder = Template.bind({})
 Placeholder.args = {
+  id: 'placeholder',
   name: 'InputPlaceholder',
   placeholder: 'Exempel med placeholder',
 }
 
 export const Error = Template.bind({})
 Error.args = {
+  id: 'error',
   name: 'InputError',
   error: 'Värdet saknas',
 }
 
 export const Password = Template.bind({})
 Password.args = {
+  id: 'password',
   name: 'InputPassword',
   placeholder: 'Enter a password',
   type: InputType.PASSWORD,
@@ -38,6 +44,7 @@ Password.args = {
 
 export const Icon = Template.bind({})
 Icon.args = {
+  id: 'icon',
   name: 'InputIcon',
   placeholder: 'Search...',
   type: InputType.SEARCH,
