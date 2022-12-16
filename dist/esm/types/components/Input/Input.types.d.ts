@@ -12,6 +12,7 @@ export declare enum InputType {
     SEARCH = "search"
 }
 export interface InputProps {
+    id: string;
     type?: InputType;
     disabled?: boolean;
     placeholder?: string;

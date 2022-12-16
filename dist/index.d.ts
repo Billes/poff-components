@@ -38,6 +38,7 @@ declare enum InputType {
     SEARCH = "search"
 }
 interface InputProps {
+    id: string;
     type?: InputType;
     disabled?: boolean;
     placeholder?: string;
