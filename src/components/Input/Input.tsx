@@ -18,11 +18,12 @@ const Input: FC<InputProps> = ({
         {icon}
       </div>
     )}
+
     <input
       className={classNames(
-        'block w-full rounded-md py-1 px-2',
+        'block w-full rounded-md',
         'border border-gray-300',
-        'font-roboto text-sm font-light text-gray-700',
+        'font-roboto font-light text-gray-700 sm:text-sm',
         'focus:outline-none',
         'disabled:cursor-not-allowed disabled:opacity-75',
         icon ? 'pl-9' : '',
