@@ -20,4 +20,5 @@ export interface InputProps {
     name: string;
     onChange?: ChangeEventHandler<HTMLInputElement>;
     icon?: ReactNode;
+    value: string | number;
 }
