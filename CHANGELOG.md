@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Add title to Icon Button
+- Set button type ('button'|'submit'|'reset')
 
 ## 1.3.0 - 2022-12-19
 
