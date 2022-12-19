@@ -3,6 +3,7 @@ import { InputProps, InputType } from './Input.types'
 import classNames from '../../utils/joinClassNames'
 
 const Input: FC<InputProps> = ({
+  id,
   type = InputType.TEXT,
   disabled = false,
   placeholder,
@@ -10,6 +11,7 @@ const Input: FC<InputProps> = ({
   onChange,
   icon,
   name,
+  value,
   ...props
 }) => (
   <div className='relative rounded-md shadow-sm'>
@@ -18,11 +20,13 @@ const Input: FC<InputProps> = ({
         {icon}
       </div>
     )}
+
     <input
+      id={id}
       className={classNames(
-        'block w-full rounded-md py-1 px-2',
+        'block w-full rounded-md',
         'border border-gray-300',
-        'font-roboto text-sm font-light text-gray-700',
+        'font-roboto font-light text-gray-700 sm:text-sm',
         'focus:outline-none',
         'disabled:cursor-not-allowed disabled:opacity-75',
         icon ? 'pl-9' : '',
@@ -34,6 +38,7 @@ const Input: FC<InputProps> = ({
       disabled={disabled}
       placeholder={placeholder}
       name={name}
+      value={value}
       onChange={onChange}
       {...props}
     />
