@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - SelectMenu component
 - Icon Button component
 - Label component
+- Button-component
 
 ## 1.2.5 - 2022-12-16
 
