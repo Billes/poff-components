@@ -1,4 +1,4 @@
-import React, { FC, ChangeEventHandler, ReactNode } from 'react';
+import React, { FC, ReactNode, ChangeEventHandler } from 'react';
 
 declare enum AlertType {
     ERROR = "error",
@@ -19,11 +19,41 @@ interface AlertProps {
 
 declare const _default: React.MemoExoticComponent<({ closable, icon, type, headline, body, destroy, duration, id, }: AlertProps) => JSX.Element>;
 
+declare enum ButtonType {
+    PRIMARY = "primary",
+    DANGER = "danger",
+    DEFAULT = "default",
+    ACCENT = "accent"
+}
+interface ButtonProps {
+    type?: ButtonType;
+    text: string;
+    disabled?: boolean;
+    onClick: () => void;
+}
+
+declare const IconButton$1: FC<ButtonProps>;
+
 interface HeadlineProps {
     label: string;
 }
 
 declare const Headline: FC<HeadlineProps>;
+
+declare enum IconButtonType {
+    PRIMARY = "primary",
+    DANGER = "danger",
+    DEFAULT = "default",
+    ACCENT = "accent"
+}
+interface IconButtonProps {
+    type?: IconButtonType;
+    icon: ReactNode;
+    disabled?: boolean;
+    onClick: () => void;
+}
+
+declare const IconButton: FC<IconButtonProps>;
 
 declare enum InputType {
     TEXT = "text",
@@ -51,11 +81,31 @@ interface InputProps {
 
 declare const Input: FC<InputProps>;
 
+interface LabelProps {
+    text: string;
+    htmlFor: string;
+}
+
+declare const Label: FC<LabelProps>;
+
 interface ParagraphProps {
     children?: ReactNode;
 }
 
 declare const Paragraph: FC<ParagraphProps>;
+
+interface SelectMenuProps {
+    name: string;
+    options: any[];
+    selected: any;
+    keyIdentifier: string;
+    valueIdentifier: string;
+    disabled?: boolean;
+    multiple?: boolean;
+    onChange?: (value: any) => void;
+}
+
+declare const SelectMenu: FC<SelectMenuProps>;
 
 interface ToggleProps {
     enabled: boolean;
@@ -79,4 +129,4 @@ interface TextareaProps {
 
 declare const Textarea: React.FC<TextareaProps>;
 
-export { _default as Alert, AlertProps, AlertType, Headline, Input, InputType, Paragraph, Textarea, Toggle };
+export { _default as Alert, AlertProps, AlertType, IconButton$1 as Button, ButtonProps, ButtonType, Headline, IconButton, IconButtonProps, IconButtonType, Input, InputType, Label, Paragraph, SelectMenu, Textarea, Toggle };
