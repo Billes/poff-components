@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - SelectMenu component
 - Icon Button component
 - Label component
-- Button-component
+- Button component
 
 ## 1.2.5 - 2022-12-16
 
@@ -28,8 +28,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add missing id on Input-component
 
 ## 1.2.3 - 2022-12-15
-
-- Icon button
 
 ## 1.2.1 - 2022-12-15
 
