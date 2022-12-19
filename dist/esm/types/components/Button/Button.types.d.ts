@@ -6,7 +6,8 @@ export declare enum ButtonType {
 }
 export interface ButtonProps {
     type?: ButtonType;
+    buttonType?: 'button' | 'submit' | 'reset' | undefined;
     text: string;
     disabled?: boolean;
-    onClick: () => void;
+    onClick?: () => void;
 }

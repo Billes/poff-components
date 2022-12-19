@@ -27,9 +27,10 @@ declare enum ButtonType {
 }
 interface ButtonProps {
     type?: ButtonType;
+    buttonType?: 'button' | 'submit' | 'reset' | undefined;
     text: string;
     disabled?: boolean;
-    onClick: () => void;
+    onClick?: () => void;
 }
 
 declare const IconButton$1: FC<ButtonProps>;
@@ -49,6 +50,7 @@ declare enum IconButtonType {
 interface IconButtonProps {
     type?: IconButtonType;
     icon: ReactNode;
+    title?: string;
     disabled?: boolean;
     onClick: () => void;
 }

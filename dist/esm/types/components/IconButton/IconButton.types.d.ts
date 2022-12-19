@@ -8,6 +8,7 @@ export declare enum IconButtonType {
 export interface IconButtonProps {
     type?: IconButtonType;
     icon: ReactNode;
+    title?: string;
     disabled?: boolean;
     onClick: () => void;
 }
