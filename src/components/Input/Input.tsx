@@ -11,6 +11,7 @@ const Input: FC<InputProps> = ({
   onChange,
   icon,
   name,
+  value,
   ...props
 }) => (
   <div className='relative rounded-md shadow-sm'>
@@ -37,6 +38,7 @@ const Input: FC<InputProps> = ({
       disabled={disabled}
       placeholder={placeholder}
       name={name}
+      value={value}
       onChange={onChange}
       {...props}
     />

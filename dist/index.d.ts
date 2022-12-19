@@ -46,6 +46,7 @@ interface InputProps {
     name: string;
     onChange?: ChangeEventHandler<HTMLInputElement>;
     icon?: ReactNode;
+    value: string | number;
 }
 
 declare const Input: FC<InputProps>;
