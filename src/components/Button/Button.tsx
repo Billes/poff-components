@@ -6,12 +6,13 @@ const IconButton: FC<ButtonProps> = ({
   onClick,
   text,
   type = ButtonType.DEFAULT,
+  buttonType = 'button',
   disabled = false,
   ...props
 }) => {
   return (
     <button
-      type='button'
+      type={buttonType}
       className={classNames(
         type === ButtonType.PRIMARY ? 'bg-sky-600 !text-white focus:ring-sky-600' : '',
         type === ButtonType.DANGER ? 'bg-red-700 !text-white focus:ring-red-700' : '',
