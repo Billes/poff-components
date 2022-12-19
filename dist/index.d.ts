@@ -38,6 +38,7 @@ declare enum InputType {
     SEARCH = "search"
 }
 interface InputProps {
+    id: string;
     type?: InputType;
     disabled?: boolean;
     placeholder?: string;
@@ -45,6 +46,7 @@ interface InputProps {
     name: string;
     onChange?: ChangeEventHandler<HTMLInputElement>;
     icon?: ReactNode;
+    value: string | number;
 }
 
 declare const Input: FC<InputProps>;

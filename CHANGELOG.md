@@ -9,6 +9,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- SelectMenu component
+- Icon Button component
+
+## 1.2.5 - 2022-12-16
+
+### Fixed
+
+- Set value on input
+
+## 1.2.4 - 2022-12-16
+
+### Fixed
+
+- Update style on Input-component
+- Add missing id on Input-component
+
+## 1.2.3 - 2022-12-15
+
 - Icon button
 
 ## 1.2.1 - 2022-12-15

@@ -14,6 +14,7 @@ export enum InputType {
 }
 
 export interface InputProps {
+  id: string
   type?: InputType
   disabled?: boolean
   placeholder?: string
@@ -21,4 +22,5 @@ export interface InputProps {
   name: string
   onChange?: ChangeEventHandler<HTMLInputElement>
   icon?: ReactNode
+  value: string | number
 }
