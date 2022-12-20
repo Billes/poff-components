@@ -11,6 +11,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add design for disabled select menu
 
+## 1.3.2 - 2022-12-19
+
+### Security
+
+- Update dependencies
+
+## 1.3.1 - 2022-12-19
+
+### Fixed
+
+- Add design for disabled select menu
+
 ## 1.3.1 - 2022-12-19
 
 ### Fixed
