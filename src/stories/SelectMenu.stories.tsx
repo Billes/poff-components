@@ -52,6 +52,7 @@ Default.args = {
   selected: null,
   keyIdentifier: 'id',
   valueIdentifier: 'name',
+  disabled: false,
 }
 
 export const Selected = Template.bind({})
@@ -61,4 +62,5 @@ Selected.args = {
   selected: people[2],
   keyIdentifier: 'id',
   valueIdentifier: 'name',
+  disabled: false,
 }

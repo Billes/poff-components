@@ -9,7 +9,6 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  layout: 'centered',
   parameters: {
     controls: { expanded: true },
   },
