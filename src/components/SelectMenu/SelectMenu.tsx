@@ -16,7 +16,7 @@ const SelectMenu: FC<SelectMenuProps> = ({
   <Listbox value={selected} name={name} onChange={onChange} disabled={disabled}>
     {({ open }) => (
       <>
-        <Listbox.Button className='relative w-full cursor-default rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 text-left shadow-sm focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600 sm:text-sm'>
+        <Listbox.Button className='relative w-full cursor-default rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 text-left shadow-sm focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600 disabled:cursor-not-allowed disabled:opacity-50 sm:text-sm'>
           <span className='block truncate'>{selected ? selected[valueIdentifier] : 'Välj...'}</span>
           <span className='pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2'>
             <ChevronUpDownIcon className='h-5 w-5 text-gray-400' aria-hidden='true' />
