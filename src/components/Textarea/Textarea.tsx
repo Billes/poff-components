@@ -19,7 +19,7 @@ const Textarea: React.FC<TextareaProps> = ({
         className={classNames(
           'block w-full rounded-md py-1 px-2 shadow-sm',
           'border border-gray-300',
-          'font-roboto text-sm font-light text-gray-700',
+          'font-roboto text-sm font-light text-gray-900',
           'focus:outline-none',
           'disabled:cursor-not-allowed disabled:opacity-75',
           error
