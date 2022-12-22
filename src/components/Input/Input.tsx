@@ -26,7 +26,7 @@ const Input: FC<InputProps> = ({
       className={classNames(
         'block w-full rounded-md',
         'border border-gray-300',
-        'font-roboto font-light text-gray-700 sm:text-sm',
+        'font-roboto font-light text-gray-900 sm:text-sm',
         'focus:outline-none',
         'disabled:cursor-not-allowed disabled:opacity-75',
         icon ? 'pl-9' : '',
