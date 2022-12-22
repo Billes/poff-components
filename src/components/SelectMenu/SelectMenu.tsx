@@ -18,7 +18,7 @@ const SelectMenu: FC<SelectMenuProps> = ({
       {({ open }) => (
         <>
           <Listbox.Button className='relative w-full cursor-default rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 text-left shadow-sm focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600 disabled:cursor-not-allowed disabled:opacity-50 sm:text-sm'>
-            <span className='block truncate'>
+            <span className='block truncate font-roboto font-light'>
               {selected ? selected[valueIdentifier] : 'Välj...'}
             </span>
             <span className='pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2'>
@@ -36,7 +36,7 @@ const SelectMenu: FC<SelectMenuProps> = ({
               {options.map((option) => (
                 <Listbox.Option
                   key={option[keyIdentifier]}
-                  className='ui-not-active:text-blackgray-900 relative flex cursor-default select-none items-center py-2 pl-8 pr-4 ui-active:bg-sky-600 ui-active:text-white ui-not-active:bg-white'
+                  className='relative flex cursor-default select-none items-center py-2 pl-8 pr-4 ui-active:bg-sky-600 ui-active:text-white ui-not-active:bg-white ui-not-active:text-gray-900'
                   value={option}
                   disabled={option['unavailable']}
                 >
@@ -49,8 +49,8 @@ const SelectMenu: FC<SelectMenuProps> = ({
                     className={classNames(
                       selected && option[keyIdentifier] === selected[keyIdentifier]
                         ? 'font-semibold'
-                        : 'font-normal',
-                      'block truncate',
+                        : 'font-light',
+                      'block truncate font-roboto',
                     )}
                   >
                     {option[valueIdentifier]}
