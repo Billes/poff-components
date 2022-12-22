@@ -3,6 +3,7 @@ import { TextareaProps } from './Textarea.types'
 import classNames from '../../utils/joinClassNames'
 
 const Textarea: React.FC<TextareaProps> = ({
+  id,
   disabled = false,
   placeholder,
   rows = 5,
@@ -14,6 +15,7 @@ const Textarea: React.FC<TextareaProps> = ({
   return (
     <div>
       <textarea
+        id={id}
         className={classNames(
           'block w-full rounded-md py-1 px-2 shadow-sm',
           'border border-gray-300',
