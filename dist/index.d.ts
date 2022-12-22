@@ -113,7 +113,7 @@ interface ToggleProps {
     enabled: boolean;
     label?: string;
     description?: string;
-    disabled: boolean;
+    disabled?: boolean;
     onChange: (value: boolean) => void;
     onClick?: () => void;
 }
