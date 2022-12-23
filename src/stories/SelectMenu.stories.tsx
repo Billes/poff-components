@@ -64,3 +64,23 @@ Selected.args = {
   valueIdentifier: 'name',
   disabled: false,
 }
+
+export const Disabled = Template.bind({})
+Disabled.args = {
+  name: 'people',
+  options: people,
+  selected: null,
+  keyIdentifier: 'id',
+  valueIdentifier: 'name',
+  disabled: true,
+}
+
+export const Empty = Template.bind({})
+Empty.args = {
+  name: 'people',
+  options: [],
+  selected: null,
+  keyIdentifier: 'id',
+  valueIdentifier: 'name',
+  disabled: false,
+}

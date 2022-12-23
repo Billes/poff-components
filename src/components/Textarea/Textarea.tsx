@@ -5,6 +5,7 @@ import classNames from '../../utils/joinClassNames'
 const Textarea: React.FC<TextareaProps> = ({
   id,
   disabled = false,
+  required = false,
   placeholder,
   rows = 5,
   error,
@@ -29,6 +30,7 @@ const Textarea: React.FC<TextareaProps> = ({
         rows={rows}
         wrap='hard'
         disabled={disabled}
+        required={required}
         name={name}
         placeholder={placeholder}
         onChange={onChange}
