@@ -6,6 +6,7 @@ const Input: FC<InputProps> = ({
   id,
   type = InputType.TEXT,
   disabled = false,
+  required = false,
   placeholder,
   error,
   onChange,
@@ -36,6 +37,7 @@ const Input: FC<InputProps> = ({
       )}
       type={type}
       disabled={disabled}
+      required={required}
       placeholder={placeholder}
       name={name}
       value={value}

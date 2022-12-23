@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { LabelProps } from './Label.types'
 
-const Label: FC<LabelProps> = ({ text, htmlFor, ...props }) => {
+const Label: FC<LabelProps> = ({ text, htmlFor, required = false, ...props }) => {
   return (
     <label
       htmlFor={htmlFor}
@@ -9,6 +9,7 @@ const Label: FC<LabelProps> = ({ text, htmlFor, ...props }) => {
       {...props}
     >
       {text}
+      {required && <span>*</span>}
     </label>
   )
 }
