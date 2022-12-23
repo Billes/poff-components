@@ -21,4 +21,5 @@ export interface InputProps {
     onChange?: ChangeEventHandler<HTMLInputElement>;
     icon?: ReactNode;
     value: string | number;
+    required?: boolean;
 }

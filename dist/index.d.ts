@@ -79,6 +79,7 @@ interface InputProps {
     onChange?: ChangeEventHandler<HTMLInputElement>;
     icon?: ReactNode;
     value: string | number;
+    required?: boolean;
 }
 
 declare const Input: FC<InputProps>;
@@ -86,6 +87,7 @@ declare const Input: FC<InputProps>;
 interface LabelProps {
     text: string;
     htmlFor: string;
+    required?: boolean;
 }
 
 declare const Label: FC<LabelProps>;
@@ -123,6 +125,7 @@ declare const Toggle: FC<ToggleProps>;
 interface TextareaProps {
     id: string;
     disabled?: boolean;
+    required?: boolean;
     error?: string;
     placeholder?: string;
     rows?: number;
