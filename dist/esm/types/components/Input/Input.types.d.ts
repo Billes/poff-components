@@ -1,4 +1,4 @@
-import { ChangeEventHandler, ReactNode } from 'react';
+import { ChangeEventHandler, ReactNode, Ref } from 'react';
 export declare enum InputType {
     TEXT = "text",
     EMAIL = "email",
@@ -22,4 +22,5 @@ export interface InputProps {
     icon?: ReactNode;
     value: string | number;
     required?: boolean;
+    ref?: Ref<HTMLInputElement>;
 }

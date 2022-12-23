@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, ChangeEventHandler } from 'react';
+import React, { FC, ReactNode, ChangeEventHandler, Ref } from 'react';
 
 declare enum AlertType {
     ERROR = "error",
@@ -80,6 +80,7 @@ interface InputProps {
     icon?: ReactNode;
     value: string | number;
     required?: boolean;
+    ref?: Ref<HTMLInputElement>;
 }
 
 declare const Input: FC<InputProps>;
