@@ -135,6 +135,6 @@ interface TextareaProps {
     value: string;
 }
 
-declare const Textarea: React.FC<TextareaProps>;
+declare const Textarea: FC<TextareaProps>;
 
 export { _default as Alert, AlertProps, AlertType, IconButton$1 as Button, ButtonProps, ButtonType, Headline, IconButton, IconButtonProps, IconButtonType, Input, InputType, Label, Paragraph, SelectMenu, Textarea, Toggle };

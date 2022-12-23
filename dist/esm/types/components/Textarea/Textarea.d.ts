@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import { TextareaProps } from './Textarea.types';
-declare const Textarea: React.FC<TextareaProps>;
+declare const Textarea: FC<TextareaProps>;
 export default Textarea;
