@@ -13,6 +13,7 @@ const Input: FC<InputProps> = ({
   icon,
   name,
   value,
+  ref,
   ...props
 }) => (
   <div className='relative rounded-md shadow-sm'>
@@ -24,6 +25,7 @@ const Input: FC<InputProps> = ({
 
     <input
       id={id}
+      ref={ref}
       className={classNames(
         'block w-full rounded-md',
         'border border-gray-300',
