@@ -29,6 +29,7 @@ interface ButtonProps {
     type?: ButtonType;
     buttonType?: 'button' | 'submit' | 'reset' | undefined;
     text: string;
+    extraClassNames?: string;
     disabled?: boolean;
     onClick?: () => void;
 }
