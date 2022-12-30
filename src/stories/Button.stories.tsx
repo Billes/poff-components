@@ -22,6 +22,7 @@ Primary.args = {
   type: ButtonType.PRIMARY,
   text: 'Save',
   disabled: false,
+  extraClassNames: '',
 }
 
 export const Danger = Template.bind({})
@@ -29,6 +30,7 @@ Danger.args = {
   type: ButtonType.DANGER,
   text: 'Discard',
   disabled: false,
+  extraClassNames: '',
 }
 
 export const Accent = Template.bind({})
@@ -36,6 +38,7 @@ Accent.args = {
   type: ButtonType.ACCENT,
   text: 'Cancel',
   disabled: false,
+  extraClassNames: '',
 }
 
 export const Default = Template.bind({})
@@ -43,6 +46,7 @@ Default.args = {
   type: ButtonType.DEFAULT,
   text: 'Close',
   disabled: false,
+  extraClassNames: '',
 }
 
 export const Disabled = Template.bind({})
@@ -50,4 +54,5 @@ Disabled.args = {
   type: ButtonType.PRIMARY,
   text: 'Save',
   disabled: true,
+  extraClassNames: '',
 }

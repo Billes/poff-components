@@ -8,6 +8,7 @@ const IconButton: FC<ButtonProps> = ({
   type = ButtonType.DEFAULT,
   buttonType = 'button',
   disabled = false,
+  extraClassNames = '',
   ...props
 }) => {
   return (
@@ -19,6 +20,7 @@ const IconButton: FC<ButtonProps> = ({
         type === ButtonType.DEFAULT ? 'bg-black !text-white focus:ring-black' : '',
         type === ButtonType.ACCENT ? 'bg-fuchsia-300 !text-black focus:ring-fuchsia-300' : '',
         'inline-flex justify-center rounded-md border border-transparent py-2 px-4 font-roboto text-sm font-bold shadow-md hover:ring-4 hover:ring-white focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+        extraClassNames,
       )}
       onClick={onClick}
       disabled={disabled}
