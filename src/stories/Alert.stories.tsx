@@ -6,6 +6,9 @@ import { AlertType } from '../components/Alert/Alert.types'
 export default {
   title: 'Elements/Alert',
   component: Alert,
+  parameters: {
+    backgrounds: { disable: true },
+  },
   argTypes: {
     destroy: { action: 'auto destroyed' },
     show: {
@@ -31,6 +34,9 @@ const Template: ComponentStory<typeof Alert> = (args) => {
 }
 
 export const Success = Template.bind({})
+Success.parameters = {
+  backgrounds: { disable: true },
+}
 Success.args = {
   closable: true,
   type: AlertType.SUCCESS,

@@ -5,6 +5,9 @@ import Toggle from '../components/Toggle'
 export default {
   title: 'Form/Toggle',
   component: Toggle,
+  parameters: {
+    backgrounds: { disable: true },
+  },
   argTypes: {
     onClick: { action: 'clicked' },
     disabled: {

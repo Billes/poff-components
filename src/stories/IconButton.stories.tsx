@@ -6,6 +6,9 @@ import { IconButtonType } from '../components/IconButton/IconButton.types'
 export default {
   title: 'Form/IconButton',
   component: IconButton,
+  parameters: {
+    backgrounds: { disable: true },
+  },
   argTypes: {
     onClick: { action: 'Button click' },
     disabled: {

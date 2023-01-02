@@ -4,7 +4,7 @@ import '!style-loader!css-loader!postcss-loader!tailwindcss/tailwind.css'
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   backgrounds: {
-    default: 'light',
+    default: 'poff',
     values: [
       { name: 'poff', value: '#e0f2fe' },
       { name: 'light', value: '#ffffff' },

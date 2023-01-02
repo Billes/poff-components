@@ -5,6 +5,9 @@ import SelectMenu from '../components/SelectMenu'
 export default {
   title: 'Form/SelectMenu',
   component: SelectMenu,
+  parameters: {
+    backgrounds: { disable: true },
+  },
   argTypes: {
     setSelected: { action: 'selected' },
   },

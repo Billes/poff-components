@@ -5,6 +5,9 @@ import { ButtonType } from '../components/Button/Button.types'
 export default {
   title: 'Form/Button',
   component: Button,
+  parameters: {
+    backgrounds: { disable: true },
+  },
   argTypes: {
     onClick: { action: 'Button click' },
     disabled: {
