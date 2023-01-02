@@ -34,9 +34,6 @@ const Template: ComponentStory<typeof Alert> = (args) => {
 }
 
 export const Success = Template.bind({})
-Success.parameters = {
-  backgrounds: { disable: true },
-}
 Success.args = {
   closable: true,
   type: AlertType.SUCCESS,
