@@ -6,6 +6,9 @@ import { Headline, Input, Label } from '../components'
 export default {
   title: 'Overlay/Modal',
   component: Modal,
+  parameters: {
+    backgrounds: { disable: true },
+  },
   argTypes: {
     open: {
       control: {

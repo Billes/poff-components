@@ -4,6 +4,9 @@ import ConfirmDialog from '../components/ConfirmDialog'
 export default {
   title: 'Overlay/ConfirmDialog',
   component: ConfirmDialog,
+  parameters: {
+    backgrounds: { disable: true },
+  },
   argTypes: {
     destroy: { action: 'auto destroyed' },
     open: {
