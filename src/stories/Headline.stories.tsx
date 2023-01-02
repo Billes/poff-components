@@ -5,6 +5,9 @@ import Headline from '../components/Headline'
 export default {
   title: 'Text/Headline',
   component: Headline,
+  parameters: {
+    backgrounds: { disable: true },
+  },
 } as ComponentMeta<typeof Headline>
 
 const Template: ComponentStory<typeof Headline> = (args) => <Headline {...args} />

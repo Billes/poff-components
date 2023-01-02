@@ -5,6 +5,9 @@ import Textarea from '../components/Textarea'
 export default {
   title: 'Form/Textarea',
   component: Textarea,
+  parameters: {
+    backgrounds: { disable: true },
+  },
 } as ComponentMeta<typeof Textarea>
 
 const Template: ComponentStory<typeof Textarea> = (args) => <Textarea {...args} />

@@ -5,6 +5,9 @@ import Label from '../components/Label'
 export default {
   title: 'Form/Label',
   component: Label,
+  parameters: {
+    backgrounds: { disable: true },
+  },
   argTypes: {},
 } as ComponentMeta<typeof Label>
 

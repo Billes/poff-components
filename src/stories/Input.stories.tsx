@@ -7,6 +7,9 @@ import { InputType } from '../components/Input/Input.types'
 export default {
   title: 'Form/Input',
   component: Input,
+  parameters: {
+    backgrounds: { disable: true },
+  },
   argTypes: {
     onChange: { action: 'Response' },
   },

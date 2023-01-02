@@ -5,6 +5,9 @@ import Paragraph from '../components/Paragraph'
 export default {
   title: 'Text/Paragraph',
   component: Paragraph,
+  parameters: {
+    backgrounds: { disable: true },
+  },
 } as ComponentMeta<typeof Paragraph>
 
 const Template: ComponentStory<typeof Paragraph> = (args) => <Paragraph {...args} />

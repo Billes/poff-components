@@ -6,6 +6,9 @@ import { AlertType } from '../components/Alert/Alert.types'
 export default {
   title: 'Elements/Alert',
   component: Alert,
+  parameters: {
+    backgrounds: { disable: true },
+  },
   argTypes: {
     destroy: { action: 'auto destroyed' },
     show: {
