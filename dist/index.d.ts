@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import React, { FC, ReactNode, ChangeEventHandler, Ref } from 'react';
 
 declare enum AlertType {
@@ -35,6 +36,18 @@ interface ButtonProps {
 }
 
 declare const IconButton$1: FC<ButtonProps>;
+
+interface ConfirmDialogProps {
+    open: boolean;
+    onClose: () => void;
+    onConfirm: () => void;
+    title: string;
+    message: string | JSX.Element;
+    confirmLabel?: string;
+    cancelLabel?: string;
+}
+
+declare const ConfirmDialog: FC<ConfirmDialogProps>;
 
 interface HeadlineProps {
     label: string;
@@ -94,6 +107,14 @@ interface LabelProps {
 
 declare const Label: FC<LabelProps>;
 
+interface ModalProps {
+    children?: ReactNode;
+    open: boolean;
+    onClose: () => void;
+}
+
+declare const Modal: FC<ModalProps>;
+
 interface ParagraphProps {
     children?: ReactNode;
 }
@@ -138,4 +159,4 @@ interface TextareaProps {
 
 declare const Textarea: FC<TextareaProps>;
 
-export { _default as Alert, AlertProps, AlertType, IconButton$1 as Button, ButtonProps, ButtonType, Headline, IconButton, IconButtonProps, IconButtonType, Input, InputType, Label, Paragraph, SelectMenu, Textarea, Toggle };
+export { _default as Alert, AlertProps, AlertType, IconButton$1 as Button, ButtonProps, ButtonType, ConfirmDialog, Headline, IconButton, IconButtonProps, IconButtonType, Input, InputType, Label, Modal, Paragraph, SelectMenu, Textarea, Toggle };
