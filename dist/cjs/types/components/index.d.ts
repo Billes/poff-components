@@ -15,5 +15,6 @@ export { default as Label } from './Label';
 export { default as Modal } from './Modal';
 export { default as Paragraph } from './Paragraph';
 export { default as SelectMenu } from './SelectMenu';
+export { default as Subtitle } from './Subtitle';
 export { default as Toggle } from './Toggle';
 export { default as Textarea } from './Textarea';

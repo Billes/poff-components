@@ -134,6 +134,12 @@ interface SelectMenuProps {
 
 declare const SelectMenu: FC<SelectMenuProps>;
 
+interface SubtitleProps {
+    label: string;
+}
+
+declare const Subtitle: FC<SubtitleProps>;
+
 interface ToggleProps {
     enabled: boolean;
     label?: string;
@@ -159,4 +165,4 @@ interface TextareaProps {
 
 declare const Textarea: FC<TextareaProps>;
 
-export { _default as Alert, AlertProps, AlertType, IconButton$1 as Button, ButtonProps, ButtonType, ConfirmDialog, Headline, IconButton, IconButtonProps, IconButtonType, Input, InputType, Label, Modal, Paragraph, SelectMenu, Textarea, Toggle };
+export { _default as Alert, AlertProps, AlertType, IconButton$1 as Button, ButtonProps, ButtonType, ConfirmDialog, Headline, IconButton, IconButtonProps, IconButtonType, Input, InputType, Label, Modal, Paragraph, SelectMenu, Subtitle, Textarea, Toggle };
