@@ -42,7 +42,7 @@
     "@storybook/react-vite": "^9.1.5",
     "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.2.39",
-    "@types/react-dom": "^18.2.15",
+    "@types/react-dom": "^19.1.9",
     "@typescript-eslint/eslint-plugin": "^6.13.0",
     "@typescript-eslint/parser": "^6.13.0",
     "@vitejs/plugin-react": "^4.2.1",
