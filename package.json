@@ -2,7 +2,7 @@
   "name": "@billes-tryckeri/poff-components",
   "version": "2.0.5",
   "description": "A library of React components for POFF",
-  "author": "Nathanael Bj\u00f6rkg\u00e5rd",
+  "author": "Nathanael Björkgård",
   "license": "MIT",
   "type": "module",
   "main": "./dist/poff-components.umd.cjs",
@@ -23,8 +23,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -o docs-build",
-    "postinstall": "sh ./.ci-449tt7.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "build-storybook": "storybook build -o docs-build"
   },
   "peerDependencies": {
     "@heroicons/react": "^2.0.18",
